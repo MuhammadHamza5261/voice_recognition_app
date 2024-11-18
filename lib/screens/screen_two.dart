@@ -95,19 +95,18 @@ class _SpeechToTextState extends State<SpeechToTextScreen> {
           child: Column(
             children: [
               Container(
-                child: Text(_speechToText.isListening
-                    ? "Listening...."
+                child: Text(_speechToText.isListening ? "Listening...."
                     :  _speechEnabled
                     ? "Tap the microphone and start the listening"
                     : "Speech not available",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20.0,
                   ),
                 ),
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Text(_wordsSpoken,
                     style: TextStyle(
                       fontSize: 25,
